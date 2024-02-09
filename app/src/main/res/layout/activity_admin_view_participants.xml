@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E1EDED">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background8"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/appName2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#5BBDEA"
+            android:backgroundTint="#8AB8DC"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="22dp" />
+
+        <Button
+            android:id="@+id/viewParticipantsBackBtn"
+            android:layout_width="163dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#8AB8DC"
+            android:text="Go Back" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="Registered Participants"
+            android:textSize="20sp"
+            android:textColor="#F8F7F7"
+            android:textColorHint="#F3F2F2"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="14dp" />
+
+        <ListView
+            android:id="@+id/listOfParticipants"
+            android:layout_width="match_parent"
+            android:textColor="#F8F7F7"
+            android:textColorHint="#F3F2F2"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|center_horizontal" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

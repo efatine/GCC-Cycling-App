@@ -1,0 +1,284 @@
+class User
+{
+  username;
+  password;
+  role;
+  
+}
+
+class Admin
+{
+  isA User;
+
+  * -- 1 MainActivity;
+}
+
+class Participant
+{
+  isA User;
+}
+
+class AccountDatabaseHandler
+{
+  String DB_NAME;
+  int DB_VERSION;
+  String TABLE_USER;
+  String COL_USERNAME;
+  String COL_ID;
+  String COL_PASSWORD;
+  String COL_ROLE;
+  * -- * User;
+    * -- * ChooseAccount;
+boolean addUser(){}
+  boolean checkUserExists(){}
+  boolean checkUserPassword(){}
+  String getUserRole(){}
+  boolean removeUser(){}
+  ArrayList<String> getUsers(){}
+}
+
+class AdminWelcomeActivity
+{
+  AccountDatabaseHandler dbHandler;
+  0..1 -- 1 MainActivity;
+ void onEventClick(){}
+ void onUserDashboardClick(){}
+  void onViewEventClick(){}
+  void onDeleteClick(){}
+  void onConfirmDelete()
+  
+}
+
+class WelcomeActivity
+{
+}
+
+class ClubOwnerWelcome
+{  0..1 -- 1 MainActivity;
+ void backButton.setOnClickListener(){}
+ void viewEvents.setOnClickListener(){}
+ void createProfile.setOnClickListener(){}
+ 
+}
+
+class ClubOwner
+{
+  ClubProfileDatabaseHandler dbHandler;
+  0..1 -- 1 ClubOwnerWelcome;
+  1 -- 0..1 ClubOwnerDashboard;
+    1 -- 1 ClubProfile;
+void saveProfile(){}
+  void saveProfileButton.setOnClickListener(){}
+  void loadAllInfo()
+}
+
+class ClubProfileDatabaseHandler
+{
+ int DATABASE_VERSION;
+ String DATABASE_NAME;
+ String TABLE_CLUB_PROFILE;
+ String COL_CLUB_ID;
+ String COL_NAME;
+ String COL_DESCRIPTION;
+ String COL_LOCATION;
+ String COL_CONTACT_NUMBER;
+ String COL_SOCIAL_MEDIA;
+ String COL_CLUB_OWNER;
+  
+ String CREATE_CLUB_TABLE(){}
+ void saveClubDetails(){}
+ String getLoadClubProfileName(){}
+ ClubProfile getClubProfile(){}
+}
+
+class MainActivity
+{
+  AccountDatabaseHandler dbHandler;
+  1 -- * Participant;
+  1 -- 0..1 WelcomeActivity;
+  void onLoginButton(){}
+  void launchWelcomeActivity(){}
+  void onCreateButton(){}
+}
+
+class EventDatabaseHandler
+{
+  int DB_VERSION;
+  String DB_NAME;
+  String TABLE_EVENT;
+  String COL_ID;
+  String COL_EVENT_TYPE;
+  String COL_EVENT_NAME;
+  String COL_INFO;
+  String COL_REQS;
+  boolean doesEventNameExist(){}
+  boolean updateEventDate(){}
+  boolean removeEvent(){}
+  ArrayList<String> fetchAllInfo(){}
+  boolean insertEvent(){}
+  String fetchEventDetails(){}
+  String fetchEventType(){}
+}
+
+class Event
+{
+  type;
+name;
+reqs;
+info;
+* -- * EventDatabaseHandler;
+}
+
+class AdminCreateEvent
+{
+  public void onClick(){
+
+}
+1 -- 1 Event;
+  0..1 -- 1 AdminWelcomeActivity;
+  void onClick(){}
+}
+
+class AdminEventView
+{
+  0..1 -- 0..* Event;
+  0..1 -- 1 AdminWelcomeActivity;
+    * -- * ClubOwnerWelcome;
+void handleRemoveEvent(){}
+  void handleModifyEvent(){}
+  void DisplayAlertDialog(){}
+}
+
+class ChooseAccount
+{
+  AccountDatabasseHandler dbHandler;
+  0..1 -- 1 MainActivity;
+ void navigateToMainActivity(){}
+  void registerUser(){}
+}
+
+class ClubOwnerDashboard
+{
+  ClubProfileDatabaseHandler dbHandler;
+  void loadAndDisplayClubInfo(){}
+}
+
+class ClubProfile
+{
+  int id;
+  String name;
+  String description;
+          * -- 1 ClubProfileDatabaseHandler;
+String location;
+String contactNumber;
+String socialMedia;
+}
+
+//$?[End_of_model]$?
+
+namespace -;
+
+
+class User
+{
+  position 353 0 142.837 112.262;
+}
+
+class Admin
+{
+  position 268 198 109 61.3056;
+  position.association Admin__AdminWelcomeActivity 53,58 95,0;
+  position.association Admin__MainActivity 80,63 46,0;
+}
+
+class Participant
+{
+  position 465 193 109 61.3056;
+}
+
+class AccountDatabaseHandler
+{
+  position 11 1 246 195.262;
+  position.association AccountDatabaseHandler__User 247,11 0,10;
+  position.association AccountDatabaseHandler__ChooseAccount 24,282 45,0;
+}
+
+class AdminWelcomeActivity
+{
+  position 407 493 271.781 58.3594;
+  position.association AdminWelcomeActivity__MainActivity 90,0 174,132;
+}
+
+class WelcomeActivity
+{
+  position 164 586 133.809 63.457;
+}
+
+class MainActivity
+{
+  position 396 313 109 64.6;
+  position.association MainActivity__Participant 63,0 44,65;
+  position.association MainActivity__WelcomeActivity 0,60 116,0;
+}
+
+class EventDatabaseHandler
+{
+  position 1186 528 203.066 225.5;
+}
+
+class Event
+{
+  position 1017 557 113.379 132.441;
+  position.association Event__EventDatabaseHandler 115,51 0,86;
+}
+
+class AdminCreateEvent
+{
+  position 751 698 148.594 80.7031;
+  position.association AdminCreateEvent__Event 150,20 0,96;
+  position.association AdminCreateEvent__AdminWelcomeActivity 0,40 216,150;
+}
+
+class AdminEventView
+{
+  position 720 529 227 115.195;
+  position.association AdminEventView__Event 228,10 0,10;
+  position.association AdminEventView__AdminWelcomeActivity 0,19 273,54;
+  position.association AdminEventView__ClubOwnerWelcome 152,0 259,112;
+}
+
+class ChooseAccount
+{
+  position 2 381 278.569 112.306;
+  position.association ChooseAccount__MainActivity 282,0 0,11;
+}
+
+class ClubOwnerWelcome
+{
+  position 612 178 303.223 115.195;
+  position.association ClubOwnerWelcome__MainActivity 82,115 202,0;
+}
+
+class ClubOwner
+{
+  position 604 11 290.41 97.9492;
+  position.association ClubOwner__ClubOwnerWelcome 51,98 38,0;
+  position.association ClubOwner__ClubOwnerDashboard 256,98 0,19;
+  position.association ClubOwner__ClubProfile 338,14 0,12;
+}
+
+class ClubProfileDatabaseHandler
+{
+  position 1334 11 267.344 304.902;
+}
+
+class ClubOwnerDashboard
+{
+  position 995 212 290.41 97.9492;
+}
+
+class ClubProfile
+{
+  position 1035 13 178.242 166.934;
+  position.association ClubProfile__ClubProfileDatabaseHandler 179,6 0,22;
+}

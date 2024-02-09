@@ -1,0 +1,39 @@
+<resources>
+
+    <string name="app_name">Grimpeurs Cycling Club</string>
+    <string name="username_hint">(Please enter username)</string>
+    <string name="username_label">username</string>
+
+    <string name="password_hint">(Please enter password)</string>
+    <string name="password_label">password</string>
+
+    <string name="button_login">Login</string>
+    <string name="button_create_account">Create account</string>
+
+    <string name="login_welcome">Welcome!</string>
+    <string name="account_kind">Please choose account</string>
+
+    <string name="eventTypeRadioGroup">eventTypeRadio</string>
+    <string name="radioTimeTrial">radioTimeTrial</string>
+    <string name="radioHillClimb">radioHillClimb</string>
+    <string name="radioRoadStageRace">radioRoadStageRace</string>
+
+    <string name="ageRangeRadioGroup">ageRangeRadioGroup</string>
+    <string name="ageRange1">ageRange1</string>
+    <string name="ageRange2">ageRange2</string>
+    <string name="ageRange3">ageRange3</string>
+
+    <string name="paceRadioGroup">paceRadioGroup</string>
+    <string name="paceRange1">paceRange1</string>
+    <string name="paceRange2">paceRange2</string>
+    <string name="paceRange3">paceRange3</string>
+
+    <string name="levelRadioGroup">levelRadioGroup</string>
+    <string name="beginner">beginner</string>
+    <string name="intermediate">intermediate</string>
+    <string name="advanced">advanced</string>
+
+    <string name="createEventButtonMain">createEventButtonMain</string>
+
+
+</resources>

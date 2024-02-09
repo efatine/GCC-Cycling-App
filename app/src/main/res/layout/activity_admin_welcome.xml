@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-52dp"
+        android:background="@drawable/background4"
+        tools:layout_editor_absoluteY="-16dp">
+
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#5BBDEA"
+            android:backgroundTint="#8AB8DC"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+
+        <TextView
+            android:id="@+id/admin_welcomeText"
+            android:layout_width="400dp"
+            android:layout_height="131dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginEnd="56dp"
+            android:backgroundTint="#E3C3C3"
+            android:gravity="center"
+            android:text="Welcome!"
+            android:textColor="#F7FAFA"
+            android:textColorHighlight="#6DC4EC"
+            android:textColorHint="#FAF7F7"
+            android:textColorLink="#42B1E3"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            tools:visibility="visible" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <Button
+            android:id="@+id/EventCreateButton"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#8AB8DC"
+            android:onClick="onEventClick"
+            android:text="Create event" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <Button
+            android:id="@+id/CheckEventsButton"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#8AB8DC"
+            android:onClick="onViewEventClick"
+            android:text="View Current Events" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <Button
+            android:id="@+id/welcomeUserDashboard"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#8AB8DC"
+            android:onClick="onUserDashboardClick"
+            android:text="View User Dashboard" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <Button
+            android:id="@+id/adminLogOutButton"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#8AB8DC"
+            android:text="Log Out" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

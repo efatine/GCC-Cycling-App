@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E1EDED"
+    android:backgroundTint="#E1EDED">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/background1">
+
+        <TextView
+            android:id="@+id/appName3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#5BBDEA"
+            android:backgroundTint="#8AB8DC"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/admin_welcomeText2"
+            android:layout_width="match_parent"
+            android:layout_height="131dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginEnd="56dp"
+            android:gravity="center"
+            android:text="Welcome!"
+            android:textColor="#F6F1F1"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="55dp" />
+
+        <Button
+            android:id="@+id/clubWelcomeCreateProfile"
+            android:layout_width="274dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#8AB8DC"
+            android:text="Create/Edit Profile" />
+
+        <Button
+            android:id="@+id/clubWelcomeViewEvents"
+            android:layout_width="272dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#8AB8DC"
+            android:text="View Events" />
+
+        <Button
+            android:id="@+id/clubWelcomeBackButton"
+            android:layout_width="271dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#8AB8DC"
+            android:text="Log Out" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CyclingClub"
+        tools:targetApi="31">
+        <activity
+            android:name=".ParticipantEventView"
+            android:exported="false" />
+        <activity
+            android:name=".ParticipantViewClub"
+            android:exported="false" />
+        <activity
+            android:name=".ClubOwnerEvents"
+            android:exported="false" />
+        <activity
+            android:name=".ParticipantDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".ClubOwnerDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".ClubOwner"
+            android:exported="false" />
+        <activity
+            android:name=".club_owner_welcome"
+            android:exported="false" />
+        <activity
+            android:name=".ChooseAccount"
+            android:exported="false" />
+        <activity
+            android:name=".WelcomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminWelcomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminCreateEvent"
+            android:exported="false" />
+        <activity
+            android:name=".AdminEventView"
+            android:exported="false" />
+        <activity
+            android:name=".AdminViewParticipants"
+            android:exported="false" />
+        <activity
+            android:name=".AdminViewClubs"
+            android:exported="false" />
+        <activity
+            android:name=".AdminUserDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".ClubOwnerWelcome"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

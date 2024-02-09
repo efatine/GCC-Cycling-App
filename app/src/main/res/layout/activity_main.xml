@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background3"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/appName4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#5BBDEA"
+            android:backgroundTint="#8AB8DC"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+        <EditText
+            android:id="@+id/mainUsernameText"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:textColor="#FFF4F4"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Username"
+            android:inputType="text"
+            android:textColorHint="#FBFBFB" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <EditText
+            android:id="@+id/mainPasswordText"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:textColor="#FFF4F4"
+            android:textColorHighlight="#F8F5F5"
+            android:textColorHint="#F8F5F5" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <Button
+            android:id="@+id/mainLoginButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#8AB8DC"
+            android:onClick="OnLoginButton"
+            android:text="LOGIN" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <Button
+            android:id="@+id/creataAccountButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#8AB8DC"
+            android:onClick="OnCreateAccountButton"
+            android:text="NO ACCOUNT? REGISTER" />
+
+    </LinearLayout>
+
+</RelativeLayout>

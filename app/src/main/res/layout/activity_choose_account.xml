@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChooseAccount">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background5"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#5BBDEA"
+            android:backgroundTint="#8AB8DC"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="70dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="REGISTER"
+            android:textColor="#F8F5F5"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="42dp" />
+
+        <EditText
+            android:id="@+id/registerUsername"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Username"
+            android:inputType="text"
+            android:textColor="#F8F7F7"
+            android:textColorHint="#F3F2F2" />
+
+        <EditText
+            android:id="@+id/registerPassword"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="#F8F7F7"
+            android:textColorHint="#F3F2F2"/>
+
+        <EditText
+            android:id="@+id/registerPasswordConfirm"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:textColor="#F8F7F7"
+            android:textColorHint="#F3F2F2"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <Button
+            android:id="@+id/registerAdmin"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#8AB8DC"
+            android:text="REGISTER AS ADMIN" />
+
+        <Button
+            android:id="@+id/registerParticipant"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#8AB8DC"
+            android:text="REGISTER AS PARTICIPANT" />
+
+        <Button
+            android:id="@+id/registerClub"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#8AB8DC"
+            android:text="REGISTER AS CLUB" />
+
+        <Button
+            android:id="@+id/backToLogin"
+            android:layout_width="248dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#8AB8DC"
+            android:text="BACK TO LOGIN PAGE" />
+    </LinearLayout>
+
+</RelativeLayout>
